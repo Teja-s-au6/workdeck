@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Update Profile </h1>
+    <form action={{constructUpdateAPI}} method="POST">
+        <div class="form-group">
+            <label>Working Company Now</label>
+            <input type="text" class="form-control" name="workingAt" value="{{profile.workingAt}}">
+        </div>
+        <div class="form-group">
+            <label>Joined At</label>
+            <input type="text" class="form-control" name="joiningDate">{{profile.joiningDate}}
+        </div>
+        <div class="form-group">
+            <label>Resign At</label>
+            <input type="text" class="form-control" name="resigningDate">{{profile.resigningDate}}
+        </div>
+        <button type="submit" class="btn btn-success">Update Profile</button>
+    </form>
+</div>

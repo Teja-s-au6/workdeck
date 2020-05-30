@@ -1,0 +1,37 @@
+<div class="container">
+    <br><br>
+    <h1>Your Details</h1>
+    <ol>
+        <div class="row">
+            <div class="col-lg-12">
+                {{#each details}}
+                <li style="border: 1px solid black">
+                    <h1  style="overflow-wrap: break-word;">name:{{this.name}}</h1>
+                    <br>
+                    <h3  style="overflow-wrap: break-word;">company:{{this.workingAt}}</h3>
+                    <br>
+                    <h3  style="overflow-wrap: break-word;">Joined At:{{this.joiningDate}}</h3>
+                    <br>
+                    <h3  style="overflow-wrap: break-word;">Resign At:{{this.resigningDate}}</h3>
+                    <br>
+                    <h3  style="overflow-wrap: break-word;">company:{{this.workingAt}}</h3>
+                    <br>
+                    <h3  style="overflow-wrap: break-word;">companiesOwned:{{this.companiesOwned}}</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <a href={{constructUpdate}}><button class="btn btn-warning ml-2" >Edit</button></a>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+                <br><br>
+                <a href='/company/create'><button class="btn btn-success">Create a new Company</button></a>
+            </div>
+        </div>
+    </ol>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br>
+</div>
